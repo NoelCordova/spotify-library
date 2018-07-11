@@ -12,7 +12,7 @@ export class NewRelasesComponent implements OnInit {
 
   constructor(private spotify: SpotifyService) {
     this.spotify.getNewRelases()
-    .subscribe( (data:any) => this.newRelases = data.albums.items );
+    .subscribe( (data:any) => this.newRelases = data );
   }
 
   ngOnInit() {

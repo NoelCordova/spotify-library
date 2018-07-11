@@ -12,7 +12,7 @@ export class CategoriesComponent implements OnInit {
 
   constructor(private spotify: SpotifyService) {
     this.spotify.getCategories()
-    .subscribe( (data:any) => this.categories = data.categories.items );
+    .subscribe( (data:any) => this.categories = data );
   }
 
   ngOnInit() {

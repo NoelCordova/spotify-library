@@ -5,6 +5,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { HomeComponent } from './components/home/home.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { NewRelasesComponent } from './components/new-relases/new-relases.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'categories', component: CategoriesComponent },
   { path: 'new-relases', component: NewRelasesComponent },
+  { path: 'search', component: SearchComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
